@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpleCalculator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="304dp">
+
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:ems="10"
+            android:hint="Entre number 1"
+            android:inputType="number"
+            android:text=""
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="136dp" />
+
+        <EditText
+
+            android:id="@+id/editTextText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:ems="10"
+            android:hint="Entre number 2"
+            android:inputType="number"
+            android:text=""
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="360dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Result"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textSize="23dp"
+
+            android:hint="Result = ">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+
+                android:id="@+id/buttonMins"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Sub"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="538dp" />
+
+            <Button
+
+                android:id="@+id/buttonRes"
+                android:layout_margin="12dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Sum"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="538dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+            <Button
+
+                android:id="@+id/buttonMul"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Mul"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="538dp" />
+
+            <Button
+
+                android:id="@+id/buttonDiv"
+                android:layout_margin="12dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="div"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="538dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+            <Button
+
+                android:id="@+id/backToPrev"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Back"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="538dp" />
+
+            <Button
+
+                android:id="@+id/Calculator"
+                android:layout_margin="12dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Calculator"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="538dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
